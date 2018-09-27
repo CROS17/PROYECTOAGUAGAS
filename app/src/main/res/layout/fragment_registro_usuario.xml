@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    tools:context=".fragments.RegistroUsuario">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Spinner android:id="@+id/spinner_espcialidades"
+            android:layout_gravity="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombres:"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/etnombresd"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/etredondo"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/background_dark"
+                    android:textColorLink="@android:color/background_dark" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="APELLIDO PATERNO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etapellidopd"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textColorLink="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="APELLIDO MATERNO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etapellidomd"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <Button
+            android:id="@+id/btnfechad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:text="FECHA" />
+
+        <EditText
+            android:id="@+id/etfechanacd"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/btnfechap"
+            android:background="@drawable/etredondo"
+            android:hint="FECHA NACIMIENTO"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVie"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="DNI:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etdnid"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVie8"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="TELEFONO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/ettelefonod"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVie52"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="CORREO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etcorreod"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVie32"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="CODIGO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etcodigod"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="number"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVie98"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="USUARIO:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etusuariod"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="text"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="CONTRASEÑA:"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/etclaved"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:background="@drawable/etredondo"
+            android:hint=" "
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegistrarDoctor"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="REGISTAR" />
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    </LinearLayout>
+</ScrollView>

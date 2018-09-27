@@ -1,0 +1,4 @@
+#Tue Sep 25 22:19:03 COT 2018
+base.0=D\:\\aguaygas\\PROYECTOAGUAGAS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\46
+path.0=classes.dex
+renamed.0=classes.dex

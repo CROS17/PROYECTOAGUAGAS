@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Codigo: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitemidproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Codigo "
+            android:textSize="17sp"
+            android:layout_weight=".8"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitemcategoriaproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria"
+            android:textSize="17sp"
+            android:layout_weight=".8"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitemnombreproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre "
+            android:textSize="17sp"
+            android:layout_weight=".8"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Venta: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitempvproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Venta"
+            android:textSize="17sp"
+            android:layout_weight=".8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Compra: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitempcproducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:text="Precio Compra"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock: "
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/txtitemstockproducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:text="Stock"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

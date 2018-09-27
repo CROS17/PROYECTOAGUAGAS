@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registro de Usuario"
+        android:textAlignment="center"
+
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etclave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="clave"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="edad"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="REGISTRAR!" />
+
+
+</LinearLayout>
