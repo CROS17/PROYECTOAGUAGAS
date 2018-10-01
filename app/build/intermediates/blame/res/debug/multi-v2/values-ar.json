@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\ROLANDO\\APLICACIONES MOVILES\\PROYECTOAGUAGAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ar\\values-ar.xml",
+            "outputFile": "C:\\Users\\Rolando\\Documents\\ANDROID\\PROYECTOAGUAGAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ar\\values-ar.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Rolando\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-15.0.1.aar\\78765dbbbaed3716831b021679301994\\res\\values-ar\\values.xml",

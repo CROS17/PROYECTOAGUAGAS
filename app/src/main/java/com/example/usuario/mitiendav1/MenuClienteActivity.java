@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -56,6 +57,8 @@ public class MenuClienteActivity extends AppCompatActivity
     RecyclerView.Adapter adap;
     ArrayList<Producto> listaCard;
 
+    TextView tvnombreclient,tvcorreoc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +68,17 @@ public class MenuClienteActivity extends AppCompatActivity
         recycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarcliente);
         setSupportActionBar(toolbar);
+
+
+        tvnombreclient=(TextView)findViewById( R.id.tvnombreclient );
+        tvnombreclient=(TextView)findViewById( R.id.tvcorreoc );
+
+        Intent intent = getIntent();
+        String nombres=intent.getStringExtra( "nombre" );
+        String correo=intent.getStringExtra( "correo" );
+
+        tvnombreclient.setText( nombres );
+        tvcorreoc.setText( correo );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabcliente);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -191,4 +205,7 @@ public class MenuClienteActivity extends AppCompatActivity
     public void listarProductos(){
 
     }
+
+
+
 }

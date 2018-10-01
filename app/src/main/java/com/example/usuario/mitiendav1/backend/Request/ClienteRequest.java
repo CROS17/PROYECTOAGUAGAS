@@ -11,24 +11,17 @@ import java.util.Map;
 
 public class ClienteRequest extends StringRequest{
 
-    private static final String CLIENTE_REQUEST_URL="http://192.168.0.11/APPGAS/RegistroCliente.php";
+    private static final String CLIENTE_REQUEST_URL="http://192.168.0.11/aguagas/registrarcliente.php";
     private Map<String,String> params;
-    public ClienteRequest(Cliente cliente, Response.Listener<String> listener){
+    public ClienteRequest(String nombres, String telefono, String correo, String usuario,String clave, Response.Listener<String> listener){
         super( Request.Method.POST, CLIENTE_REQUEST_URL,listener,null);
         params=new HashMap<>();
-        params.put("idtipocliente",String.valueOf(cliente.getIdtipocliente()));
-        params.put("nombres",cliente.getNombres());
-        params.put("razonsocial",cliente.getRazonsocial());
-        params.put("ruc",cliente.getRuc());
-        params.put("dni",cliente.getDni());
-        params.put("telefono",String.valueOf(cliente.getTelefono()));
-        params.put("fechanacimiento",String.valueOf(cliente.getFechaNacimiento()));
-        params.put("correo",cliente.getCorreo());
-        params.put("direccion",cliente.getCorreo());
-        params.put("usuario",cliente.getUsuario());
-        params.put("clave",String.valueOf(cliente.getClave()));
-        params.put("estado",String.valueOf(cliente.getEstado()));
 
+        params.put("nombres",nombres);
+        params.put("telefono",telefono);
+        params.put("correo",correo);
+        params.put("usuario",usuario);
+        params.put("clave",clave);
 
     }
 

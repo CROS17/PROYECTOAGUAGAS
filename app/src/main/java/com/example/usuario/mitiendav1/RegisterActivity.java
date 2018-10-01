@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
-import com.example.usuario.mitiendav1.backend.controller.RegistrarRequest;
+import com.example.usuario.mitiendav1.backend.Request.ClienteRequest;
 import com.example.usuario.mitiendav1.backend.model.Cliente;
 
 import org.json.JSONException;
@@ -19,27 +19,29 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText etnombre, etusername, etclave, etedad;
-    Button btnregistrar;
+    EditText etnombrecliente, ettelefonocliente, etcorreocliente, etusuarioclient, etclaveclient;
+    Button btnRegistrarClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        etnombre = (EditText) findViewById(R.id.etnombre);
-        etusername = (EditText) findViewById(R.id.etusername);
-        etclave = (EditText) findViewById(R.id.etclave);
-        etedad = (EditText) findViewById(R.id.etedad);
+        etnombrecliente = (EditText) findViewById(R.id.etnombrecliente);
+        ettelefonocliente = (EditText) findViewById(R.id.ettelefonocliente);
+        etcorreocliente = (EditText) findViewById(R.id.etcorreocliente);
+        etusuarioclient = (EditText) findViewById(R.id.etusuarioclient);
+        etclaveclient = (EditText) findViewById(R.id.etclaveclient);
 
-        btnregistrar = (Button) findViewById(R.id.btnregistrar);
-        btnregistrar.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarClient = (Button) findViewById(R.id.btnRegistrarClient);
+        btnRegistrarClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                final String name=etnombre.getText().toString();
-                final String username=etusername.getText().toString();
-                final String clave=etclave.getText().toString();
-                final int edad= Integer.parseInt(etedad.getText().toString());
+                final String nombres=etnombrecliente.getText().toString();
+                final String telefono=ettelefonocliente.getText().toString();
+                final String correo=etcorreocliente.getText().toString();
+                final String usuario=etusuarioclient.getText().toString();
+                final String clave=etclaveclient.getText().toString();
 
                 Response.Listener<String> respoListener = new Response.Listener<String>() {
                     @Override
@@ -63,9 +65,9 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 };
 
-                RegistrarRequest registrarRequest = new RegistrarRequest(name,username,edad,clave, respoListener);
+                ClienteRequest clienteRequest = new ClienteRequest(nombres,telefono,correo,usuario,clave, respoListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
-                queue.add(registrarRequest);
+                queue.add(clienteRequest);
 
             }
         });

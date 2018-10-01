@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\ROLANDO\\APLICACIONES MOVILES\\PROYECTOAGUAGAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+            "outputFile": "C:\\Users\\Rolando\\Documents\\ANDROID\\PROYECTOAGUAGAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Rolando\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\fd751f0e41627c6e478003b6a57e6237\\res\\values-kk\\values.xml",

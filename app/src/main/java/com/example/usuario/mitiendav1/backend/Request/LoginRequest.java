@@ -9,12 +9,12 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest{
 
-    private static final String LOGIN_REQUEST_URL="http://192.168.0.11/APPGAS/Login.php";
+    private static final String LOGIN_REQUEST_URL="http://192.168.0.11/aguagas/Login.php";
     private Map<String,String> params;
-    public LoginRequest(String username, String clave, Response.Listener<String> listener){
+    public LoginRequest(String usuario, String clave, Response.Listener<String> listener){
         super(Request.Method.POST, LOGIN_REQUEST_URL,listener,null);
         params=new HashMap<>();
-        params.put("username",username);
+        params.put("usuario",usuario);
         params.put("clave",clave);
 
     }
